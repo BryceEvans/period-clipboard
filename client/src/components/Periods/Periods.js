@@ -23,7 +23,7 @@ class Periods extends Component {
     return ( 
       <div>
         {this.classPeriods.map((classPeriods, index) => (
-          <Link to={'/dashboard/periods/{:class}'}>
+          <Link to={'/dashboard/periods/classexample'}>
             <Period key={index} classPeriods={classPeriods} />
           </Link>
         ))}

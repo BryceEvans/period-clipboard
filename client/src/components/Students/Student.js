@@ -3,8 +3,8 @@ import { Segment } from 'semantic-ui-react';
 
 const Period = (props) => {
     return ( 
-      <Segment style={{margin: "10px"}}>
-        {props.classPeriods.class} - {props.classPeriods.name}
+      <Segment style={{margin: "5px", width: "100px"}}>
+        {props.students.firstName} {props.students.lastName}
       </Segment>
     );
   }

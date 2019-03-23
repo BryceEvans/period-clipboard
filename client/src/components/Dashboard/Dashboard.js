@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import Periods from '../Periods/Periods';
+import Students from '../Students/Students';
 import { Grid, Segment, Menu, Icon } from 'semantic-ui-react';
 
 class Dashboard extends Component {
@@ -46,8 +47,8 @@ const { active } = this.state;
         </Grid.Column>
         <Grid.Column stretched width='12'>
           <Segment>
-            <Route path='/dashboard/periods' component={ Periods }/>
-            
+            <Route exact path='/dashboard/periods' component={ Periods }/>
+            <Route exact path='/dashboard/periods/classexample' component={ Students }/>
           </Segment>
         </Grid.Column>
       </Grid>    
