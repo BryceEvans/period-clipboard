@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Student from './Student';
 
+import SortButtons from '../SortButtons/SortButtons';
+
 class Students extends Component {
   constructor(props) {
     super(props);
@@ -61,6 +63,7 @@ class Students extends Component {
           ))}
         </div>
         -- FRONT OF CLASSROOM --
+        <SortButtons />
       </div>
     );
   }
